@@ -7,5 +7,5 @@
 // loaded in regex.html/ dictionary.js
 
 var solveCrosswordPuzzle = function(letters){
-  
+  return dictionary.match(new RegExp('\\b' + letters.replace(/\_/g, '\\w') + '\\b', 'g'));
 }
